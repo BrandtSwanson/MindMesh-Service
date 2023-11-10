@@ -22,6 +22,44 @@ type Note struct {
 }
 
 func main() {
+	/*
+		connectionString := "mongodb://ec2-user:password@ec2-54-227-196-70.compute-1.amazonaws.com:port/database"
+
+		// Set client options
+		clientOptions := options.Client().ApplyURI(connectionString)
+
+		// Create a MongoDB client
+		client, err := mongo.NewClient(clientOptions)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		// Create a context with a timeout (adjust the timeout as needed)
+		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+		defer cancel()
+
+		// Connect to the MongoDB server
+		err = client.Connect(ctx)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		// Check the connection
+		err = client.Ping(ctx, nil)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Println("Connected to MongoDB!")
+
+		// Now you can perform database operations using the 'client'
+
+		// Don't forget to close the connection when you're done
+		err = client.Disconnect(ctx)
+		if err != nil {
+			log.Fatal(err)
+		}
+	*/
 	// Create a new Chi router
 	r := chi.NewRouter()
 	var notes []Note
