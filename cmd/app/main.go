@@ -43,7 +43,7 @@ type Event struct {
 }
 
 func main() {
-	connectionString := "mongodb://192.168.1.206:27017/database"
+	connectionString := "mongodb://ip:port/database"
 
 	// // Set client options
 	clientOptions := options.Client().ApplyURI(connectionString)
